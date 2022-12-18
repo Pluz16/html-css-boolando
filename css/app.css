@@ -1,0 +1,54 @@
+/* Strutturare prima il layout solo con i blocchi colorati.
+Solo se i blocchi colorati funzionano passiamo al particolare...
+ricordatevi che un elemento con il position absolute spesso richiede un antenato con position diverso da static */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul,
+ol,
+menu {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+
+select {
+	border: none;
+	background-color: transparent;
+}
+
+header{
+    display: block;
+    max-width: none;
+    background-color: orange;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+    
+}
+
+.row{
+    display: flex;
+    padding: 20px;
+}
+
+.card{
+    height: 400px;
+    width: 200px;
+    background-color: azure;
+    
+}
