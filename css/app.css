@@ -51,6 +51,11 @@ main{
 .row{
     display: flex;
     padding: 20px;
+	justify-content: space-between;
+}
+
+.logo{
+	max-width: 50%;
 }
 
 .card-container{
@@ -58,7 +63,28 @@ main{
     width: 900px;
     background-color: azure;
 	margin-top: 40px;
-	
     display: flex;
+	position: relative;
 }
+
+.model{
+	max-width: 270px;
+	position: absolute;
+	
+}
+
+.description{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+.old-price{
+	text-decoration: line-through;
+}
+
+.price{
+	color: red;
+}
+
 
