@@ -6,6 +6,7 @@ ricordatevi che un elemento con il position absolute spesso richiede un antenato
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	
 }
 
 html {
@@ -35,20 +36,29 @@ header{
     background-color: orange;
 }
 
+main{
+	display: flex;
+	justify-content: center;
+}
+
 .container {
 	max-width: 900px;
 	margin: 0 auto;
     
 }
 
+
 .row{
     display: flex;
     padding: 20px;
 }
 
-.card{
-    height: 400px;
-    width: 200px;
+.card-container{
+    height: 1200px;
+    width: 900px;
     background-color: azure;
-    
+	margin-top: 40px;
+	
+    display: flex;
 }
+
