@@ -41,50 +41,63 @@ main{
 	justify-content: center;
 }
 
-.container {
-	max-width: 900px;
-	margin: 0 auto;
-    
+.section {
+	padding: 62px 10px;
 }
 
+.container {
+	max-width: 1444px;
+	margin: 0 auto;
+}
 
-.row{
-    display: flex;
-    padding: 20px;
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+[class^='col-'] {
+	padding: 0 10px;
+}
+
+.col-4 {
+	flex-basis: calc(100% * (4 / 12));
+}
+
+.main-header {
+	background-color: #ff6900;
+	padding: 18px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+
+.main-header .row {
 	justify-content: space-between;
 }
 
-.logo{
-	max-width: 50%;
+.logo {
+	height: 2rem;
 }
 
-.card-container{
-    height: 1200px;
-    width: 900px;
-    background-color: azure;
-	margin-top: 40px;
-    display: flex;
-	position: relative;
+
+
+
+
+/* DEBUG RULERS */
+
+.debug .row {
+	border: 4px solid green;
+	padding: 20px;
 }
 
-.model{
-	max-width: 270px;
-	position: absolute;
-	
+.debug .container {
+	border: 4px solid red;
+	padding: 20px;
 }
 
-.description{
-	position: absolute;
-	left: 20px;
-	top: 20px;
-}
-
-.old-price{
-	text-decoration: line-through;
-}
-
-.price{
-	color: red;
+.debug [class^='col-'] {
+	border: 4px solid purple;
+	padding: 20px;
 }
 
 

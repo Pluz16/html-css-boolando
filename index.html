@@ -8,51 +8,59 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <header>
+    
+    <header class="main-header">
         <div class="container">
-            <div class="row">
-                <div class="nav-gender">
-                    <span>Donna</span>
-                    <span>Uomo</span>
-                    <span>Bambino</span>
-                </div>
-                <div>
-                    <img src="img/boolean-logo.png" class="logo" alt="Logo">
-                </div>
-                <div class="nav-actions">
-                    <span>log</span>
-                    <span>pref</span>
-                    <span>cart</span>
-                </div>
+          <div class="row">
+            <div class="col-"></div>
+            <div class="col-">
+              <img class="logo" src="./img/boolean-logo.png" alt="">
             </div>
+            <div class="col-"></div>
+          </div>
         </div>
+    
+      </header>
 
-    </header>
-        
-    <main>
-        <section class="card-container">
-            <div> <img src="img/1.webp" class="model" alt="Model1">
-                <div class="discount"> 
-                    <div class="like">
-                        <div class="sustainable">
+      <main class="main-content">
 
-                        </div>
-
-                    </div>
-
-                </div>
-
-            
-            <section class="description">
-                <div class="brand">Levi's</div>
-                <div class="type">RELAXED FIT TEE UNISEX</div>
-                <div class="price">14,90$</div>
-                <div class="old-price">25.40$</div>
+        <section class="section">
+    
+          <div class="container">
+            <div class="row">
+              <div class="col-">
+    
+                <h2>Prodotti</h2>
+              </div>
             </div>
-            </section>
-        </section>
-    </main>
+          </div>
+    
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                
+                <article class="product-card">
+                  <div class="product__thumbnail">
+                    <img class="product__image" src="./img/1.webp" alt="Jean levi's colore blu">
+                    <div class="product__favourit-button">
+                      &hearts;
+                    </div>
+                    <ul class="product__tags">
+                      <li class="tag tag-discount">-50%</li>
+                      <li class="tag tag-type">Sostenibilità</li>
+                    </ul>
+                  </div>
+                  <div class="product__info">
+                    <h4 class="product__brand">Levi's</h4>
+                    <h3 class="product__name">Tee Unisex</h3>
+                    <p class="product__price">
+                      <span class="discounted__price">14,99&euro;</span>
+                      <span class="real__price">29,99&euro;</span>
+                    </p>
+                  </div>
+                </article>
+    
+              </div>
 
-    <footer></footer>
 </body>
 </html>
