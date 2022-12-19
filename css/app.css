@@ -88,6 +88,68 @@ main{
 	padding: 32px 0;
 }
 
+/* PRODUCT RULES */
+
+.product__thumbnail {
+	position: relative;
+}
+
+.product__favourit-button,
+.product__tags {
+	position: absolute;
+}
+
+.product__favourit-button {
+	right: 0;
+	top: 10px;
+	background-color: white;
+	width: 52px;
+	line-height: 52px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.product__tags {
+	left: 0;
+	bottom: 42px;
+	display: flex;
+	gap: 8px;
+}
+
+.product__tags .tag {
+	font-weight: 700;
+	color: white;
+	padding: 0 10px;
+	line-height: 28px;
+}
+
+.product__tags .tag.tag-discount {
+	background-color: red;
+}
+
+.product-card:hover .tag.tag-discount {
+	background-color: rgb(97, 17, 33);
+}
+
+.product-card .product__tags .tag.tag-discount:hover {
+	background-color: rgb(30, 192, 221);
+}
+
+.product__tags .tag.tag-type {
+	background-color: green;
+}
+
+.product__price {
+	color: red;
+	font-weight: 700;
+}
+
+.product__price > :nth-child(2) {
+	color: black;
+	text-decoration: line-through;
+	font-weight: 400;
+}
+
 
 
 
